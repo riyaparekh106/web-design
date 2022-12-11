@@ -1,0 +1,31 @@
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.app .count {
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  margin-top: 5rem;
+}
+.app .count h3 {
+  line-height: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 5rem;
+}
+.app .count h1 {
+  font-size:2em;
+  margin-top: 1rem;
+}
+.app .buttons button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: none;
+  margin: 0 2rem;
+  font-size: 1em;
+  box-shadow: 0 4px 32px 0 rgba(10,14,29,.02), 0 8px 64px 0 rgba(10,14,29,.08);
+  cursor: pointer;
+}

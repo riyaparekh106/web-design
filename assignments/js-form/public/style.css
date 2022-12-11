@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: lightblue;
+  font-family: Arial;
+}
+
+.header {
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  color: white;
+}
+
+nav {
+  display: flex;
+  padding: 1rem 2rem;
+  align-items: center;
+  background: #ff5722;
+}
+
+nav img {
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.form-container {
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 550px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 1rem;
+  padding: 12px;
+}
+
+.form-action {
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  grid-column: 1/2;
+}
+
+input,
+select {
+  grid-column: 2/3;
+}
+
+#emails-consent {
+  grid-column: 1 / span 2;
+}
+
+.register-email__error, .register-confirm-email__error {
+  grid-column: 2 / 3;
+  color: red;
+}
+
+.register-name__error {
+  grid-column: 2 / 3;
+  color: red;
+  display: none;
+}
+
+.show-error {
+  display: block;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff5722;
+  padding: 1rem 2rem;
+}
+
+@media only screen and (max-width: 40rem) {
+  .form-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  label,
+  input,
+  .form-action,
+  #email-consent {
+    grid-column: span 2;
+  }
+}
+

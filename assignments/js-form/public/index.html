@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logo.jpg" width="100" height="150"
+        /></a>
+      </nav>
+    </div>
+    <main class="form-container">
+      <form id="registration-form">
+        <label for="register-name__input">Name(Required):</label>
+        <input name="name" id="register-name__input" />
+        <span class="register-name__error">Name field is required.</span>
+
+        <label for="email" class="“register-email__error”">Email(Required):</label>
+        <input name="email" type="text" class="register_email" />
+        <span class="register-email__error"></span>
+
+        <label for="email">Confirm Email:</label>
+        <input name="confirmEmail" type="text" />
+        <span class="register-confirm-email__error"></span>
+
+        <label for="tier">Tier:</label>
+        <select id="tier" name="tier">
+          <option value="" selected>Please Select</option>
+          <option value="silver tier">Silver Tier</option>
+          <option value="gold tier">Gold Tier</option>
+          <option value="platinum tier">Platinum Tier</option>
+        </select>
+
+        <div id="emails-consent">
+          <input type="checkbox" class="emails" name="wants-spam" checked />
+          <label for="emails">
+            Do you receive any kind of spam emails?</label
+          ><br />
+        </div>
+
+        <div class="form-action">
+          <button type="submit" class="register-submit">Register</button>
+        </div>
+      </form>
+    </main>
+  </body>
+  <footer>
+    <p>Author: Riya Parekh</p>
+    <p><a href="mailto:hege@example.com">parekh.riy@northeastern.edu</a></p>
+    <p><a href="#">Privacy</a></p>
+  </footer>
+  <script src="script.js"></script>
+</html>

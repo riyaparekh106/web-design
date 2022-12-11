@@ -1,0 +1,88 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+
+html,body {
+    height: 100%;
+    margin: 0;
+    background-color: aqua;
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    display: grid;
+   }
+
+
+.nav_menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    padding:0;
+    margin:0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+
+}
+.card {
+    /* width: max(20%, 20rem); */
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blanchedalmond;
+    box-shadow: 3px 3px 3px 3px lightpink;
+    grid-column: span 3;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.card_picture {
+    aspect-ratio: 1/1;
+    width: 80%;
+}
+
+.card_link {
+    background-color: darkblue;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 640px) {
+    body{
+        background-color: yellow;
+    }    
+
+
+.nav_menu {
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    grid-column: span 12;
+}
+}
+
+.footer_menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    padding:5rem;
+    margin:0;
+    font-size:12px;
+}

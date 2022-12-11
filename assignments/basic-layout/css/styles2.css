@@ -1,0 +1,192 @@
+#homepage {
+    display: grid;
+    width: 100%;
+    height: 250px;
+    grid-template-areas:
+      "head head"
+      "nav  main"
+      "foot  foot";
+    grid-template-rows: 50px 1fr 30px;
+    grid-template-columns: 25% 1fr;
+  }
+
+  #homepage > header {
+    grid-area: head;
+    background-color: plum;
+    }
+
+    .menu {
+
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .menu li {
+        display: flex;
+        padding: 15px;
+    }
+
+
+    .menu li:hover {
+        background-color: rebeccapurple;
+    }
+
+
+    .menu li:hover a {
+    background-color: rebeccapurple;
+    color: white;
+    }
+
+  #homepage > nav {
+    grid-area: nav;
+    background-color: pink;
+    border-right: 1px solid black;
+    
+  }
+
+  .local-menu li:hover, .local-menu li:hover a {
+    background-color:plum;
+     }
+
+    .local-menu li {
+        padding: 15px;
+    }
+
+
+    .local-menu ul {
+    list-style-type: none;
+     }
+
+  #homepage > main {
+    grid-area: main;
+    background-color: pink;
+    padding: 20px;
+  }
+
+  #homepage > footer {
+    grid-area: foot;
+    background-color: plum;
+    padding: 2rem;
+    margin: 0; 
+    padding-left: 50px;
+    padding-top: 15px;
+    /* display: flex;
+    justify-content: left; */
+
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .menu {
+    display: flex;
+    flex-direction: row;
+    background-color: plum;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly; 
+}
+
+.menu li {
+    padding: 20px;
+}
+
+.menu li:hover a {
+    color:white;
+}
+
+.menu li:hover, .menu li:hover a {
+    background-color: rebeccapurple;
+}
+
+.local-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    /* float: left; */
+    border-right: 1px solid black;
+    width: 20%;
+    /* height: 16.5rem;  */
+      
+
+
+/*.local-menu li {
+    writing-mode: horizontal-tb;
+    padding: 20px;
+}
+
+.local-menu li:hover, .local-menu li:hover a {
+    background-color:plum;
+}
+
+
+
+.local-menu ul {
+    list-style-type: none;
+}
+
+.nav.local-menu {
+    display: flex;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav article article"
+      "footer footer footer";
+    grid-template-rows: 80px 1fr 70px;
+    grid-template-columns: 20% 1fr 15%;
+    height: 50vh;
+    margin: 0;
+    padding: 1rem;
+  }
+
+.homepage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+footer {
+    background-color: plum;
+    text-align: left;
+    padding: 15px;
+    margin: 0; 
+} */

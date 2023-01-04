@@ -1,0 +1,48 @@
+.property-item-card {
+  margin: 0 1rem 1rem 1rem;
+  width: 300px;
+  position: relative;
+}
+
+.favorite-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.property-item-card p {
+  margin: 0;
+}
+
+.property-item-card-image {
+  border-radius: 15px;
+}
+
+.property-item-card-image img {
+  border-radius: 15px;
+  padding: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.property-item-card-image img:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.property-title-rating {
+  display: flex;
+}
+
+.property-title-rating > h4 {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.gg-heart {
+  --ggs: 1.2;
+}
+
+.gg-heart-filled {  
+  color: red;
+  --ggs: 1.2;
+}
